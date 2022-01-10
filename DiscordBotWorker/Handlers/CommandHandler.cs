@@ -32,7 +32,7 @@ public class CommandHandler : HandlerBase
 
         public async Task CommandExecutedAsync(Optional<CommandInfo> command, ICommandContext context, Discord.Commands.IResult result)
         {
-        if (command.Value == null)
+        if (!command.IsSpecified)
         {
             Logger.LogInformation("User {user} attempted to use command in message{command}", context.User, context.Message);
         }

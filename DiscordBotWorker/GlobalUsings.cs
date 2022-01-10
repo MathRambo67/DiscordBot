@@ -15,4 +15,6 @@ global using System.Reflection;
 global using DiscordBotWorker.Modules;
 global using Discord.Addons.Hosting.Util;
 global using Discord.Interactions;
+global using DiscordBotWorker.Modules.InteractionModules;
+global using DiscordBotWorker.Modules.CommandModules;
 
